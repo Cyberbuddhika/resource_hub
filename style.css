@@ -1,0 +1,193 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+  }
+  
+  /*----- Nav bar settings ---*/
+  /* .navi .navbar, 
+  .navi .navbar * {
+    color: #ffffff !important;
+  } */
+  
+  .nav-item {
+    margin-right: 30px; /* adjust as needed */
+  }
+  
+  .navbar-brand {
+    margin-right: 60px;
+  }
+  
+  .custom-active {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .custom-active:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background: #850E35;
+    bottom: 2px; /* value for increase/decrease space */
+  }
+  
+  .navi,
+  .navbar {
+    background: rgb(255,185,185);
+    background: linear-gradient(90deg, rgba(255,185,185,1) 7%, rgba(255,245,228,1) 52%);
+  }
+  
+  /*----- Body Content settings ------*/
+  
+  .head-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 73px;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    width: 64px;
+  }
+  
+  /* Sections */
+  .section1 {
+    background-color: #ffffff;
+  }
+
+  .section2{
+    background-color: #f4f4f4;
+  }
+
+  .section3 {
+    background-color: #ffffff;
+  }
+
+  .section4 {
+    background-color: #f9f9f9;
+  }
+
+
+  /* Button */
+  .btn-primary {
+    background-color: #EE6983;
+    border-color: #850E35;
+    position: relative;
+    /*overflow: hidden; /*Contains the ripple within the button */
+  }
+  
+  .btn-danger,
+  .btn-primary:hover {
+    background-color: #850E35;
+    border-color: #850E35;
+  }
+  
+  /* Ripple effect */
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .btn-primary:hover::after {
+    animation: ripple 0.6s linear;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(100);
+      opacity: 0;
+    }
+  }
+  
+  .thumbnail {
+    height: auto;
+    width: auto;
+  }
+  
+  .card-title {
+    font-size: 0.75rem;
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: start; /* align items to start */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /*----- Footer Content settings ------*/
+  
+  .footer {
+    background-color: #e6f2d3;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-text {
+    font-size: 0.75rem;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #dc3545;
+    text-decoration: underline;
+  }
+  
+  
+  /*----- Mobile settings ------*/
+  
+  @media (max-width: 480px) {
+    .head-title {
+      align-items: flex-start;
+      margin-left: 20px; /* adjust margins for smaller screens */
+      margin-right: 20px; /* adjust margins for smaller screens */
+      padding: 10px; /* adjust padding for smaller screens */
+    }
+  
+    h1 {
+      font-size: 1.25rem; /* adjust font size for smaller screens */
+    }
+  
+    .logo {
+      width: 100px; /* adjust logo size for smaller screens */
+    }
+  
+    .card-title {
+      font-size: 0.75rem; /* adjust font size for smaller screens */
+    }
+  }
+  
