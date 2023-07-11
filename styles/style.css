@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #333333;
   }
   
@@ -19,6 +19,8 @@ body {
   
   .navbar-brand {
     margin-right: 60px;
+    font: "Roboto";
+    font-weight: 700;
   }
   
   .custom-active {
@@ -39,8 +41,8 @@ body {
   
   .navi,
   .navbar {
-    background: rgb(255,185,185);
-    background: linear-gradient(90deg, rgba(255,185,185,1) 7%, rgba(255,245,228,1) 52%);
+    background: rgb(238,105,131);
+    background: linear-gradient(90deg, rgba(238,105,131,1) 28%, rgba(255,196,196,1) 48%);
   }
   
   /*----- Body Content settings ------*/
@@ -87,7 +89,7 @@ body {
     background-color: #EE6983;
     border-color: #850E35;
     position: relative;
-    /*overflow: hidden; /*Contains the ripple within the button */
+    overflow: hidden; /*Contains the ripple within the button */
   }
   
   .btn-danger,
